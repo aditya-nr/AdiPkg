@@ -1,0 +1,20 @@
+[Defines]
+    MODULE_TYPE     = DXE_DRIVER
+    ENTRY_POINT     = EntryPoint
+    FILE_GUID       = 1156DE1A-3F0F-457A-8FD2-A15289F71E74
+    VERSION_STRING  = 1.0
+    INF_VERSION     = 0x0001001B
+    BASE_NAME       = AdiPkg_GetProtocol
+
+[Sources]
+    GetProtocol.c
+    ./../02_ProtocolInstall/Protocol.h
+    
+[Packages]
+    MdePkg/MdePkg.dec
+
+[LibraryClasses]
+    DebugLib
+    UefiDriverEntryPoint
+[Depex]
+    TRUE

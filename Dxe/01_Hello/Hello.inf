@@ -1,0 +1,19 @@
+[Defines]
+    INF_VERSION     = 0x00010006
+    BASE_NAME       = AdiPkg_Hello
+    FILE_GUID       = 1C23E0A1-5E41-4A56-8E1B-7E1BFE90E5A2
+    ENTRY_POINT     = EntryPoint
+    MODULE_TYPE     = DXE_DRIVER
+
+[Sources]
+    Hello.c
+
+[Packages]
+    MdePkg/MdePkg.dec
+
+[LibraryClasses]
+    UefiDriverEntryPoint
+    DebugLib
+    
+[Depex]
+    TRUE
