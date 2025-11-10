@@ -1,0 +1,24 @@
+[Defines]
+    MODULE_TYPE     = DXE_DRIVER
+    ENTRY_POINT     = EntryPoint
+    FILE_GUID       = D0FCD863-5EB8-4F20-AD9F-C7FDFF11193B
+    VERSION_STRING  = 1.0
+    INF_VERSION     = 0x0001001B
+    BASE_NAME       = AdiPkg_PcieInfo
+
+[Sources]
+    PcieInfo.c
+    
+[Packages]
+    MdePkg/MdePkg.dec
+    
+
+[LibraryClasses]
+    DebugLib
+    UefiDriverEntryPoint
+
+[Protocols]
+    gEfiPciIoProtocolGuid
+    
+[Depex]
+    gEfiPciEnumerationCompleteProtocolGuid

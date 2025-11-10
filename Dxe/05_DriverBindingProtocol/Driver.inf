@@ -1,0 +1,21 @@
+[Defines]
+    MODULE_TYPE     = UEFI_APPLICATION
+    ENTRY_POINT     = EntryPoint
+    FILE_GUID       = 05FC9404-ABD4-45CC-9524-76310DABCD12
+    VERSION_STRING  = 1.0
+    INF_VERSION     = 0x0001001B
+    BASE_NAME       = AdiPkg_Driver
+
+[Sources]
+    Driver.c
+    ../04_CreateDevice/Header.h
+    
+[Packages]
+    MdePkg/MdePkg.dec
+
+[LibraryClasses]
+    DebugLib
+    UefiApplicationEntryPoint
+    UefiLib
+[Depex]
+    TRUE

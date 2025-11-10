@@ -15,7 +15,6 @@ EntryPoint(
 
     EFI_STATUS Status;
     EFI_BOOT_SERVICES *gBS = NULL;
-    EFI_RUNTIME_SERVICES *gRS = NULL;
     PRINT_HELLO_PROTOCOL *PrintHelloProtocol = NULL;
 
     gBS = gST->BootServices;
