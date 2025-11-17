@@ -1,0 +1,19 @@
+[Defines]
+    INF_VERSION     = 0x00010006
+    BASE_NAME       = AdiPkg_Producer
+    FILE_GUID       = 8487EAA7-72AF-4C59-8EB0-2E12F7C88C88
+    ENTRY_POINT     = ProducerEntryPoint
+    MODULE_TYPE     = DXE_DRIVER
+
+[Sources]
+    Producer.c
+    MyHeader.h
+[Packages]
+    MdePkg/MdePkg.dec
+
+[LibraryClasses]
+    UefiDriverEntryPoint
+    DebugLib
+    
+[Depex]
+    TRUE

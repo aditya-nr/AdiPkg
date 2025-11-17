@@ -131,10 +131,8 @@ EFIAPI GetControllerName2(
     return EFI_SUCCESS;
 }
 
-// CHAR8 *langs[] = {"eng", NULL};
 CHAR8 langs[] = "eng\0\0";
 
-// CHAR8 *langs2[] = {"en", NULL};
 CHAR8 langs2[] = "en\0\0";
 
 EFI_COMPONENT_NAME_PROTOCOL mComponentNameProtocol = {

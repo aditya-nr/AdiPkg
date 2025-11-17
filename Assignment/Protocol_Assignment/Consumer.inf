@@ -1,0 +1,20 @@
+[Defines]
+    INF_VERSION     = 0x00010006
+    BASE_NAME       = AdiPkg_Consumer
+    FILE_GUID       = 28A5E476-AED7-4391-AE6E-4AE41C18DD46
+    ENTRY_POINT     = ConsumerEntryPoint
+    MODULE_TYPE     = DXE_DRIVER
+
+[Sources]
+    Consumer.c
+    MyHeader.h
+[Packages]
+    MdePkg/MdePkg.dec
+
+[LibraryClasses]
+    UefiDriverEntryPoint
+    DebugLib
+
+
+[Depex]
+    TRUE
